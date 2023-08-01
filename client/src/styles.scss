@@ -1,0 +1,30 @@
+/* You can add global styles to this file, and also import other style files */
+@import 'src/app/app-data/color-theme.scss';
+.padded {
+	padding: 20px;
+}
+
+
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+
+.pointer {
+	cursor: pointer;
+}
+
+.link {
+	@extend .pointer;
+	color: $accent;
+	text-decoration: none;
+	color: $accent;
+}
+
+table, th, td {
+	border: 1px solid black;
+	padding: 1px 5px;
+	text-align: left;
+}
+
+table {
+	border-collapse: collapse;;
+}
