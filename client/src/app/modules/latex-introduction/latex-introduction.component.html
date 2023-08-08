@@ -1,6 +1,6 @@
 <h1>An introduciton to LaTeX</h1>
 
-<p>This quick guide is based on Lindsey Fletcher's LaTeX tutorial. 
+<p>This quick guide is based on <a href="mailto: lindsey.fletcher23@gmail.com" class="link">Lindsey Fletcher</a>'s LaTeX tutorial. 
     <a  class="link"
         href="https://www.overleaf.com/learn/latex/Learn_LaTeX_in_30_minutes" 
         target=_blank>Learn LaTeX in 30 minutes
@@ -96,6 +96,7 @@
         </mat-panel-title>
     </mat-expansion-panel-header>
 
+    <h3>3.1 Font styles, paragraph indentation and new page</h3>
     <table class="mat-elevation-z2">
         <thead>
             <th>LaTeX</th>
@@ -113,7 +114,55 @@
             <td>&#92;underline&#123; &#125;</td>
             <td>underline</td>
         <tr>
+        <tr>
+            <td>&#92;hl&#123; &#125;</td>
+            <td>highlight (requires packages xcolor and soul)</td>
+        <tr>
+        <tr>
+            <td>&#92;noindent</td>
+            <td>prevent automatic indentation</td>
+        <tr>
+        <tr>
+            <td>&#92;indent</td>
+            <td>restore automatic indentation</td>
+        <tr>
+        <tr>
+            <td>&#92;newpage</td>
+            <td>start new page</td>
+        <tr>
     </table> <br>
+    
+    <hr>
+
+    <h3>3.2 Font size</h3>
+    <p>Font sizes are identified by special names. The actual size is not absolute but relative to the font size declared in the 
+        \documentclass statement. (defaulted to size 10 for articles)</p>
+    
+    <ol>
+        <li>&#92;tiny</li>
+        <li>&#92;scriptsize</li>
+        <li>&#92;footnotesize</li>
+        <li>&#92;small</li>
+        <li>&#92;normalsize</li>
+        <li>&#92;large</li>
+        <li>&#92;Large</li>
+        <li>&#92;LARGE</li>
+        <li>&#92;huge</li>
+        <li>&#92;Huge</li>
+    </ol>
+
+    <hr>
+
+    <h3>3.3 Font family</h3>
+
+    <markdown src="../../../assets/source-code/latex/sample3.tex"></markdown>
+
+    <object 
+        data="../../../assets/source-code/latex/sample3.pdf" 
+        type="application/pdf" 
+        width="100%" 
+        height="500px">
+    </object>
 </mat-expansion-panel>
 
 
