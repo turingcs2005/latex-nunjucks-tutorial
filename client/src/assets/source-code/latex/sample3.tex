@@ -2,6 +2,14 @@
 \documentclass[11pt]{article}    % use 11pt normal font size (default is 10pt)
 \usepackage{xcolor}
 \usepackage{soul}
+\usepackage{fontspec}
+
+% LaTeX default font is Computer Modern
+% linux font similar to Times New Roman
+\usepackage{libertine}
+
+% \setmainfont{roboto} % You may change main font from Computer Modern or libertine to roboto
+
 
 \begin{document}
 \textbf{Bold text}
@@ -24,10 +32,12 @@ No more indentation front this point on.
 Indentation restored.
 \vspace{1cm}
 
-
 \newpage
-This is a new page.
+\fontspec{roboto}  % change font family to roboto
+This is a new page. Default font has been changed to roboto.
+
 \vspace{1cm}
+
 \tiny{tiny}
 
 \scriptsize{scriptsize}
